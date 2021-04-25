@@ -152,13 +152,42 @@ public class PruebaFor {
         
         System.out.println("===================[ARREGLO GATO]===================="); 
         System.out.println("Arreglo que modela el juego de gato:");
-        for (char[] gato1 : gato) {
-            for (int m = 0; m<gato.length; m++) {
-                System.out.print("  -  " + gato1[m]);
-            }
-            System.out.println();
+        String [] gato = new String[9];
+            gato[0] = "0,0";
+            gato[1] = "0,1";
+            gato[2] = "0,2";
+            gato[3] = "1,0";
+            gato[4] = "1,1";
+            gato[5] = "1,2";
+            gato[6] = "2,0";
+            gato[7] = "2,1";
+            gato[8] = "2,2";
+        
+        for (int x = 0; x < 3; x++) {
+            
+            System.out.print(" | " + gato[x] + " | ");
+
         }
-    }
+        
+        System.out.println();
+        
+        for (int x = 3; x < 6; x++) {
+            
+            System.out.print(" | " + gato[x] + " | ");
+        
+        }
+        
+        System.out.println();
+        
+        for (int x = 6; x < 9; x++) {
+            
+            System.out.print(" | " + gato[x] + " | ");
+        
+        }
+        System.out.println();
+        
+        }
+    
 
     
     // Switch para la selección de sistema
